@@ -1,0 +1,5 @@
+{
+  "name": "Copy of DocSync - Vibe Debugging Docs",
+  "description": "An AI-powered documentation generator that verifies code examples against the source using a self-correcting verification loop.",
+  "requestFramePermissions": []
+}
