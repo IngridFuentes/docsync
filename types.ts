@@ -27,10 +27,12 @@ export interface VerificationResult {
 
 export interface GeneratedDoc {
   filePath: string;
+  sourceSha: string;
   summary: string;
   sections: DocSection[];
   verification: VerificationResult;
   lastUpdated: string;
+  language?: string; // Track the language of the doc
 }
 
-export type ProcessingState = 'IDLE' | 'FETCHING' | 'ANALYZING' | 'VERIFYING' | 'COMPLETE' | 'ERROR';
+export type ProcessingState = 'IDLE' | 'FETCHING' | 'ANALYZING' | 'VERIFYING' | 'TRANSLATING' | 'COMPLETE' | 'ERROR';
